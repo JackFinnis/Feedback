@@ -8,17 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		04E3835529695FCF0070AC9B /* FeedbackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3835429695FCF0070AC9B /* FeedbackApp.swift */; };
-		04E3835729695FCF0070AC9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3835629695FCF0070AC9B /* ContentView.swift */; };
 		04E3835929695FD00070AC9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E3835829695FD00070AC9B /* Assets.xcassets */; };
-		04E3835C29695FD00070AC9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E3835B29695FD00070AC9B /* Preview Assets.xcassets */; };
+		04E383652969607C0070AC9B /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E383642969607C0070AC9B /* RootView.swift */; };
+		04E38367296960A10070AC9B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E38366296960A10070AC9B /* View.swift */; };
+		04E38369296961340070AC9B /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E38368296961340070AC9B /* Font.swift */; };
+		04E3836E296962D90070AC9B /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3836D296962D90070AC9B /* ScanView.swift */; };
+		04E38374296963990070AC9B /* Haptics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E38373296963990070AC9B /* Haptics.swift */; };
+		04E383762969672E0070AC9B /* CompanyLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E383752969672E0070AC9B /* CompanyLogoView.swift */; };
+		04E38378296968A10070AC9B /* FeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E38377296968A10070AC9B /* FeedbackView.swift */; };
+		04E3837A296969D70070AC9B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E38379296969D70070AC9B /* String.swift */; };
+		04E3837C29696AB10070AC9B /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3837B29696AB10070AC9B /* SuccessView.swift */; };
+		04E3837E296972900070AC9B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3837D296972900070AC9B /* ViewModel.swift */; };
+		04E38380296973BC0070AC9B /* NameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E3837F296973BC0070AC9B /* NameView.swift */; };
+		04E383822969754E0070AC9B /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E383812969754E0070AC9B /* LogoView.swift */; };
+		04E38384296976140070AC9B /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E38383296976140070AC9B /* PhotoPicker.swift */; };
+		04E38386296979990070AC9B /* ConfirmLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E38385296979990070AC9B /* ConfirmLogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04E3835129695FCF0070AC9B /* Feedback.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Feedback.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E3835429695FCF0070AC9B /* FeedbackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackApp.swift; sourceTree = "<group>"; };
-		04E3835629695FCF0070AC9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		04E3835829695FD00070AC9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		04E3835B29695FD00070AC9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		04E383642969607C0070AC9B /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		04E38366296960A10070AC9B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		04E38368296961340070AC9B /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		04E3836D296962D90070AC9B /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		04E38373296963990070AC9B /* Haptics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Haptics.swift; sourceTree = "<group>"; };
+		04E383752969672E0070AC9B /* CompanyLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyLogoView.swift; sourceTree = "<group>"; };
+		04E38377296968A10070AC9B /* FeedbackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackView.swift; sourceTree = "<group>"; };
+		04E38379296969D70070AC9B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		04E3837B29696AB10070AC9B /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		04E3837D296972900070AC9B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		04E3837F296973BC0070AC9B /* NameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameView.swift; sourceTree = "<group>"; };
+		04E383812969754E0070AC9B /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		04E38383296976140070AC9B /* PhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
+		04E38385296979990070AC9B /* ConfirmLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmLogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,19 +76,47 @@
 			isa = PBXGroup;
 			children = (
 				04E3835429695FCF0070AC9B /* FeedbackApp.swift */,
-				04E3835629695FCF0070AC9B /* ContentView.swift */,
+				04E383642969607C0070AC9B /* RootView.swift */,
+				04E3837D296972900070AC9B /* ViewModel.swift */,
+				04E3836C296962A70070AC9B /* Get */,
+				04E3836B296962A10070AC9B /* Send */,
+				04E3836A2969614D0070AC9B /* Extra */,
 				04E3835829695FD00070AC9B /* Assets.xcassets */,
-				04E3835A29695FD00070AC9B /* Preview Content */,
 			);
 			path = Feedback;
 			sourceTree = "<group>";
 		};
-		04E3835A29695FD00070AC9B /* Preview Content */ = {
+		04E3836A2969614D0070AC9B /* Extra */ = {
 			isa = PBXGroup;
 			children = (
-				04E3835B29695FD00070AC9B /* Preview Assets.xcassets */,
+				04E38366296960A10070AC9B /* View.swift */,
+				04E38368296961340070AC9B /* Font.swift */,
+				04E38373296963990070AC9B /* Haptics.swift */,
+				04E38379296969D70070AC9B /* String.swift */,
+				04E3837B29696AB10070AC9B /* SuccessView.swift */,
 			);
-			path = "Preview Content";
+			path = Extra;
+			sourceTree = "<group>";
+		};
+		04E3836B296962A10070AC9B /* Send */ = {
+			isa = PBXGroup;
+			children = (
+				04E3836D296962D90070AC9B /* ScanView.swift */,
+				04E383752969672E0070AC9B /* CompanyLogoView.swift */,
+				04E38377296968A10070AC9B /* FeedbackView.swift */,
+			);
+			path = Send;
+			sourceTree = "<group>";
+		};
+		04E3836C296962A70070AC9B /* Get */ = {
+			isa = PBXGroup;
+			children = (
+				04E3837F296973BC0070AC9B /* NameView.swift */,
+				04E383812969754E0070AC9B /* LogoView.swift */,
+				04E38383296976140070AC9B /* PhotoPicker.swift */,
+				04E38385296979990070AC9B /* ConfirmLogoView.swift */,
+			);
+			path = Get;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +177,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E3835C29695FD00070AC9B /* Preview Assets.xcassets in Resources */,
 				04E3835929695FD00070AC9B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +188,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04E3835729695FCF0070AC9B /* ContentView.swift in Sources */,
+				04E38384296976140070AC9B /* PhotoPicker.swift in Sources */,
+				04E38369296961340070AC9B /* Font.swift in Sources */,
+				04E3837A296969D70070AC9B /* String.swift in Sources */,
+				04E38378296968A10070AC9B /* FeedbackView.swift in Sources */,
+				04E383652969607C0070AC9B /* RootView.swift in Sources */,
+				04E3837C29696AB10070AC9B /* SuccessView.swift in Sources */,
+				04E38380296973BC0070AC9B /* NameView.swift in Sources */,
+				04E3837E296972900070AC9B /* ViewModel.swift in Sources */,
+				04E38374296963990070AC9B /* Haptics.swift in Sources */,
+				04E38386296979990070AC9B /* ConfirmLogoView.swift in Sources */,
+				04E3836E296962D90070AC9B /* ScanView.swift in Sources */,
 				04E3835529695FCF0070AC9B /* FeedbackApp.swift in Sources */,
+				04E38367296960A10070AC9B /* View.swift in Sources */,
+				04E383822969754E0070AC9B /* LogoView.swift in Sources */,
+				04E383762969672E0070AC9B /* CompanyLogoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,15 +330,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Feedback/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4CQW4CFFYT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Your camera is used to allow you to scan Feedback QR Codes";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You can select a logo from your photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -295,15 +362,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Feedback/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4CQW4CFFYT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Your camera is used to allow you to scan Feedback QR Codes";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "You can select a logo from your photo library";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

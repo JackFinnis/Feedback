@@ -1,0 +1,43 @@
+//
+//  CompanyLogoView.swift
+//  Feedback
+//
+//  Created by Jack Finnis on 07/01/2023.
+//
+
+import SwiftUI
+
+struct CompanyLogoView: View {
+    var body: some View {
+        VStack {
+            Spacer()
+            Image("mcdonalds")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 100)
+                .cornerRadius(10)
+            Text("McDonalds")
+                .font(.navTitle)
+            Spacer()
+            
+            NavigationLink {
+                FeedbackView()
+            } label: {
+                Text("Next")
+                    .bottomButton()
+            }
+        }
+        .navigationTitle("Back")
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                Text("")
+            }
+        }
+    }
+}
+
+struct CompanyLogoView_Previews: PreviewProvider {
+    static var previews: some View {
+        CompanyLogoView()
+    }
+}
