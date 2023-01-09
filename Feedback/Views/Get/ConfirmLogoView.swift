@@ -1,5 +1,5 @@
 //
-//  CompanyLogoView.swift
+//  ConfirmLogoView.swift
 //  Feedback
 //
 //  Created by Jack Finnis on 07/01/2023.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CompanyLogoView: View {
+struct ConfirmLogoView: View {
     var body: some View {
         VStack {
             Spacer()
@@ -21,23 +21,27 @@ struct CompanyLogoView: View {
             Spacer()
             
             NavigationLink {
-                FeedbackView()
+//                SuccessView(type: .get)
             } label: {
-                Text("Next")
+                Text("Submit")
                     .bottomButton()
             }
         }
         .navigationTitle("Back")
         .toolbar {
             ToolbarItem(placement: .principal) {
-                Text("")
+                Text("Summary")
+                    .font(.headline)
             }
         }
     }
 }
 
-struct CompanyLogoView_Previews: PreviewProvider {
+struct ConfirmLogoView_Previews: PreviewProvider {
     static var previews: some View {
-        CompanyLogoView()
+        NavigationView {
+            ConfirmLogoView()
+                .navigationBarTitleDisplayMode(.inline)
+        }
     }
 }

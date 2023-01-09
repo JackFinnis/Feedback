@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct FeedbackView: View {
-    @State var text = ""
+    @ObservedObject var sendVM: SendVM
+    @Binding var showSendFlow: Bool
+    
     @FocusState var focused: Bool
     
     var body: some View {
         VStack(spacing: 0) {
             Form {
-                TextEditor(text: $text)
+                TextEditor(text: $sendVM.text)
                     .focused($focused)
                     .overlay(alignment: .leading) {
-                        if text.isEmpty {
+                        if sendVM.text.isEmpty {
                             Text("Enter your feedback")
                                 .padding(.leading, 4)
                                 .foregroundColor(Color(UIColor.placeholderText))
@@ -28,12 +30,12 @@ struct FeedbackView: View {
             
             if !focused {
                 NavigationLink {
-                    SuccessView(type: .send)
+                    SuccessView(showModal: $showSendFlow, type: .send)
                 } label: {
                     Text("Submit")
                         .bottomButton()
                 }
-                .disabled(text.trimmed.isEmpty)
+                .disabled(sendVM.text.trimmed.isEmpty)
             }
         }
         .navigationTitle("Back")
@@ -45,9 +47,9 @@ struct FeedbackView: View {
             ToolbarItem(placement: .keyboard) {
                 HStack {
                     Button("Clear") {
-                        text = ""
+                        sendVM.text = ""
                     }
-                    .disabled(text.isEmpty)
+                    .disabled(sendVM.text.isEmpty)
                     Spacer()
                     Button("Done") {
                         focused = false
@@ -62,7 +64,7 @@ struct FeedbackView: View {
 struct FeedbackView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            FeedbackView()
+            FeedbackView(sendVM: SendVM(), showSendFlow: .constant(true))
                 .navigationBarTitleDisplayMode(.inline)
         }
     }

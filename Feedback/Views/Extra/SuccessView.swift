@@ -7,6 +7,43 @@
 
 import SwiftUI
 
+struct SuccessView: View {
+    @Binding var showModal: Bool
+    
+    let type: SuccessType
+    
+    var body: some View {
+        VStack(spacing: 10) {
+            Spacer()
+            VStack {
+                Image(systemName: "checkmark.seal")
+                    .font(.largeTitle)
+                    .foregroundColor(.green)
+                Text(type.title)
+                    .font(.headerTitle)
+            }
+            Text(type.message)
+                .multilineTextAlignment(.center)
+                .padding(.horizontal, 50)
+            Spacer()
+            
+            Button {
+                showModal = false
+            } label: {
+                Text(type.action)
+                    .bottomButton()
+            }
+        }
+        .navigationBarBackButtonHidden()
+    }
+}
+
+struct SuccessView_Previews: PreviewProvider {
+    static var previews: some View {
+        SuccessView(showModal: .constant(true), type: .get)
+    }
+}
+
 enum SuccessType {
     case get, send
     
@@ -35,43 +72,5 @@ enum SuccessType {
         case .send:
             return "Done"
         }
-    }
-}
-
-struct SuccessView: View {
-    @EnvironmentObject var vm: ViewModel
-    
-    let type: SuccessType
-    
-    var body: some View {
-        VStack(spacing: 10) {
-            Spacer()
-            VStack {
-                Image(systemName: "checkmark.seal")
-                    .font(.largeTitle)
-                    .foregroundColor(.green)
-                Text(type.title)
-                    .font(.headerTitle)
-            }
-            Text(type.message)
-                .multilineTextAlignment(.center)
-                .padding(.horizontal, 50)
-            Spacer()
-            
-            Button {
-                vm.showSendFlow = false
-                vm.showGetFlow = false
-            } label: {
-                Text(type.action)
-                    .bottomButton()
-            }
-        }
-        .navigationBarBackButtonHidden()
-    }
-}
-
-struct SuccessView_Previews: PreviewProvider {
-    static var previews: some View {
-        SuccessView(type: .get)
     }
 }

@@ -9,20 +9,24 @@ import SwiftUI
 import AVFoundation
 
 struct ScanView: View {
-    @EnvironmentObject var vm: ViewModel
+    @StateObject var sendVM = SendVM()
     @Environment(\.dismiss) var dismiss
     @State var animate = true
+    
+    @Binding var showSendFlow: Bool
     
     var body: some View {
         NavigationView {
             ZStack {
-                NavigationLink("", isActive: $vm.foundUrl) {
-                    CompanyLogoView()
+                NavigationLink("", isActive: $sendVM.foundCompanyID) {
+                    if let companyID = sendVM.companyID {
+                        CompanyLogoView(sendVM: sendVM, showSendFlow: $showSendFlow, companyID: companyID)
+                    }
                 }
                 .hidden()
                 
                 QRScanner { url in
-                    vm.handleUrl(url)
+                    sendVM.handleUrl(url)
                 }
                 
                 ZStack {
